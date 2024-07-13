@@ -4,43 +4,80 @@
         <meta charset="utf-8">
         <meta name="Authors" content="Nicolas, Wallas">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" type="imagex/png" href="/img/page_Icon.ico">
+        <link rel="stylesheet" href="css/styles.css">
+
         <title>The Good Guys</title>
     </head>
     <body>
-        <header>
-            <!--Nav-->
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="portfolio.html">Portifólio</a></li>
-            </ul>
-            <img src="https://cdn4.iconfinder.com/data/icons/basic-flat-ui-extra-set-200-item/76/ui_ux_minimalist_button_game_joystick_play-512.png" alt="control">
-            <form action="https://www.youtube.com/search" method="get" target="_blank">
-                <input type="text" name="search_query" placeholder="Busque no Youtube">
-                <button type="submit">Pesquisar</button>
-            </form>        
+        <header class="headerTop"> 
+            <div class="textContainer">
+                <h1>Front-End Developer</h1>
+                <p><i>“A designer knows he has achieved perfection not when there is nothing left to add, but when there is nothing left to take away”</i></p>
+                <p><em>Antonie De-Saint Exupery</em></p>
+                <form action="https://www.youtube.com/search" method="get" target="_blank" class="headerSearch">
+                    <input type="text" name="search_query" placeholder="Busque no Youtube" class="headerInput">
+                    <button type="submit" class="headerBtn">Pesquisar</button>
+                </form>
+
+                <nav class="navBar">        
+                    <ul>
+                        <li><a href="index.html" class="navLink">Home</a></li>
+                        <li class="dropdown">
+                            <a class="navLink dropBtn">Portifólios</a>
+                            <div class="dropdownContent">
+                                <a href="#">Wallas</a>
+                                <a href="#">Nicolas</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1631513823629/buwJbUM0D.png" alt="Foto de capa" class="headerImg">
         </header>
         <main>
-            <!--Seções de Aprensetações e Rostos-->
+            <h2>Apresentações</h2>
+
             <section>
-                <h2>Wallas</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia alias, error exercitationem voluptatibus vero illum cum aliquid impedit soluta beatae. Nam ipsum suscipit nihil, blanditiis obcaecati voluptas fugiat doloribus saepe.</p>
+                <h3>Wallas Aguiar Rocha - 20 anos</h3>
+                <div class="separator"></div>
+                <p>Olá, me chamo Wallas Aguiar Rocha, tenho 20 anos e moro em Teresina-PI. É um prazer té-los aqui no nosso website, eu e meu companheiro Nicolas estamos desenvolvendo esse site para mostrarmos nosso aprendizado com HTML e CSS. </p>
+                <p>Irei abordar, portanto, um portifólio sobre minhas habilidades e projetos desenvolvidos que poderá ser acessado por <a href="/portfolio.html">aqui</a>, ou pelo botão ao lado de "Home". Te espero lá :)</p>
             </section>
             <section>
-                <h2>Nicolas</h2>
+                <h3>Nicolas</h3>
+                <div class="separator"></div>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam quaerat quibusdam cupiditate numquam nobis alias perferendis ratione optio atque dolore praesentium a sint animi necessitatibus possimus tempore, beatae doloremque maxime.</p>
             </section>
         </main>
-        <footer>
-            <!--Formulário para contato-->
-            <h3>Deixe seu Feedback! Mas piedade</h3>
-            <form action="/page.php">
-                <label>Nome</label>
-                <input id="name">
-                <label>E-mail</label>
-                <input id="email">
-                <label>Mensagem</label>
-                <input id="message">
+        <footer class="footerTop">
+            <img src="https://vinncorp.com/wp-content/uploads/2022/11/Group-58408-2.png" alt="" class="footerImg">
+            
+            <form action="mailto:wallasarprofissional@gmail.com" method="get" enctype="text/plain" class="formFooter">
+                <h2>Deixe seu Feedback</h2>
+                <div class="formRow">
+                    <div class="formCol">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div class="formCol">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                </div>
+                <div class="formRow">
+                <div class="formCol">
+                    <label for="message">Mensagem</label>
+                    <textarea name="message" id="message"></textarea>
+                </div>
+                <div class="formCol">
+                    <button type="submit" class="buttonDefault">Enviar</button>
+                </div>
+            </div>
             </form>
+            </footer>
         </footer>
     </body>
 </html>

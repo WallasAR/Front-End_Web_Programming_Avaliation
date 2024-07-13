@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather:400,300,700");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  line-height: 1.5; 
+  background-color: #fafafa;
+  font-family: "Poppins", monospace, sans-serif;
+}
+
+/* Estilo da barra de rolagem */
+body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.headerTop{
+  padding: 2em;
+  display: flex;
+  object-fit: cover;
+  position: relative;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  justify-content: space-around;
+  background-image: url("/img/wp5386535.webp");
+}
+
+.headerTop p {
+  color: #cbcbcb;
+}
+
+.headerBtn {
+  width: 200px;
+  height: 70px;
+}
+
+.headerInput {
+  width: 400px;
+  height: 35px;
+}
+
+.headerImg {
+  width: 25%;
+  height: auto;
+  margin-left: 2em;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.headerSearch{
+  display: flex;
+  margin: 3em 0;
+  align-items: center;
+  
+}
+
+.textContainer{
+  padding: 1em;
+  width: 50%;
+}
+
+.navBar {
+  flex: 1;
+  display: flex;
+  position: absolute;
+  justify-content: flex-start;
+}
+
+.navBar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+
+.navBar li{
+  padding: 1em;
+  list-style: none;
+  display: inline-block;
+}
+
+.navLink{
+  padding: 1em;
+  color: #12264e;
+  background-color: #fafafa;
+  border-top-left-radius: .5em;
+  border-top-right-radius: .5em;
+  border-bottom-color: transparent;
+  transition: color .2s ease-in-out;
+}
+
+.navLink:hover {
+  color: #5993ff;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdownContent {
+  z-index: 1;
+  display: none;
+  min-width: 160px;
+  border-radius: 1em;
+  position: absolute;
+  background-color: #fafafa;
+  box-shadow: 0 8px 16px 0px #0000000f;
+}
+
+.dropdownContent a {
+  display: block;
+  text-align: left;
+  color: #5993ff;
+  border-radius: 1em;
+  padding: 12px 16px;
+  text-decoration: none;
+}
+
+.dropdownContent a:hover {
+  background-color: #fafafa;
+}
+
+.dropdownContent a:active {
+  background-color: #0000001b;
+}
+
+.dropdown:hover .dropdownContent {
+  display: block;
+}
+
+p{
+  color: #777;
+  text-indent: 1.5em;
+  font-family: "Merriweather";
+}
+
+button {
+  padding: 1em;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  border-style: none;
+  text-transform: uppercase;
+  background-color: #464646;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  font-family: "Poppins", sans-serif;
+  transition: background-color .2s ease-in-out;
+}
+
+button:hover{
+  background-color: #2f2f2f;
+}
+
+.buttonDefault {
+  width: 40%;
+  border-radius: 1em;
+  background-color: #4683ff;
+}
+
+.buttonDefault:hover {
+  background-color: #2d539f;
+}
+
+input, textarea {
+  padding: 1em;
+  border-radius: 5px;
+  background-color: #dcdcdc;
+  border: 2px solid transparent;
+  font-family: "Poppins", sans-serif;
+  transition: border .2s ease-in-out;
+}
+
+input:focus, textarea:focus{
+  outline: none;
+} 
+
+textarea {
+  width: 100%;
+  overflow: hidden;
+}
+
+a {
+  color: #4683ff;
+  text-decoration: none;
+  border-bottom: 1px solid;
+  transition: color .2s linear, border .2s linear;
+}
+
+a:hover{
+  border-bottom-color: transparent;
+}
+
+h1 {
+  color: #fff;
+}
+
+main {  
+  width: 80%;
+  margin: auto;
+}
+
+section {
+  padding: 1em;
+  margin-bottom: 2em;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 2px 2px 10px #00000013;
+}
+
+.separator{
+  width: 35px;
+  height: 3px;
+  border: none;
+  margin-bottom: 30px;
+  background-color: #777;
+}
+
+footer {
+  width: 100%;
+  margin: auto;
+}
+
+footer h2{
+  text-align: center;
+}
+
+.formFooter {
+  width: 50%;
+  display: flex;
+  margin: 0 auto;
+  margin-right: 10%;
+  flex-direction: column;
+}
+
+.formRow {
+  display: flex;
+  margin-bottom: 1em;
+  justify-content: space-between;
+}
+
+.formCol {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+}
+
+.formCol label {
+  width: 100px;
+  margin-right: 10px;
+}
+
+.formCol input {
+  flex: 1;
+}
+
+.formCol button {
+  margin-left: 60%;
+  margin-top: 15%;
+}
+
+.formCol input, .formCol textarea{
+  background-color: #f1f1f1;
+}
+
+.formCol label {
+  color: #004568;
+}
+
+.footerTop {
+  display: flex;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-image: url("/img/overlay.svg");
+}
+
+.footerImg {
+  width: 35%;
+  margin: 1em;
+}
