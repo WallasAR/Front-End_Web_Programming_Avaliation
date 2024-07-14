@@ -284,3 +284,10 @@ footer h2{
   width: 35%;
   margin: 1em;
 }
+
+/*Estilo da Página de Portifólio*/
+
+.profilePhoto{
+  height: 12%;
+  width: 22%;
+}
