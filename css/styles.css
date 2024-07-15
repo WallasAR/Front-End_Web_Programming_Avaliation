@@ -27,7 +27,7 @@ header {
   justify-content: space-around;
 }
 .headerTop {
-  background-image: url("/img/wp5386535.webp");
+  background-image: url("../img/wp5386535.webp");
 }
 .headerTopAvatar {
   background-image: url("https://i.pinimg.com/originals/b5/fd/3f/b5fd3fbe984103e08b9482471484394b.gif");
