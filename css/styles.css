@@ -246,9 +246,6 @@ h1 {
 main {  
   width: 90%;
   margin: auto;
-}
-
-article {
   margin: 5%;
 }
 
@@ -277,6 +274,11 @@ footer {
 
 footer h2{
   text-align: center;
+}
+
+footer p {
+  text-align: right;
+  width: 95%;
 }
 
 .formFooter {
